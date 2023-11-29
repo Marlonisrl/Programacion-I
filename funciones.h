@@ -1,6 +1,10 @@
-void mostrarMenu();
+void mostrarM();
 int validarOpcion(int opcion);
-void ingresarProducto(char nombre[][50], int cantidad[], float precio[], float precioTotal[], int *numProductos);
-void editarProducto(char nombre[][50], int cantidad[], float precio[], float precioTotal[], int numProductos);
-void eliminarProducto(char nombre[][50], int cantidad[], float precio[], float precioTotal[], int *numProductos);
-void listarProductos(char nombre[][50], int cantidad[], float precio[], float precioTotal[], int numProductos);
+
+void ingresarP(char nombre[][40], int cantidad[], float precio[], float precioTotal[], int *numProductos);
+
+void editarPr(char nombre[][40], int cantidad[], float precio[], float precioTotal[], int numProductos);
+
+void eliminarP(char nombre[][40], int cantidad[], float precio[], float precioTotal[], int *numProductos);
+
+void lista(char nombre[][40], int cantidad[], float precio[], float precioTotal[], int numProductos);
