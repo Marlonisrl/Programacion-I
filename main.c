@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "funciones.h"
+#include <math.h>
 
 
 int main() {
@@ -9,32 +10,32 @@ int main() {
     float precios[100];
     float preciosTotales[100];
     int numProductos = 0;
-    int opcion;
+    int escoger;
 
     do {
         mostrarMenu();
         printf("Seleccione una opción: ");
-        scanf("%d", &opcion);
+        scanf("%d", &escoger);
 
-        if (validarOpcion(opcion)) {
-            switch (opcion) {
+        if (validarOpcion(escoger)) {
+            switch (escoger) {
                 case 1:
-                    ingresarProducto(nombres, cantidades, precios, preciosTotales, &numProductos);
+                    ingresarP(nombres, cantidades, precios, preciosTotales, &numProductos);
                     break;
                 case 2:
-                    editarProducto(nombres, cantidades, precios, preciosTotales, numProductos);
+                    editarPr(nombres, cantidades, precios, preciosTotales, numProductos);
                     break;
                 case 3:
-                    eliminarProducto(nombres, cantidades, precios, preciosTotales, &numProductos);
+                    eliminarP(nombres, cantidades, precios, preciosTotales, &numProductos);
                     break;
                 case 4:
-                    listarProductos(nombres, cantidades, precios, preciosTotales, numProductos);
+                    lista(nombres, cantidades, precios, preciosTotales, numProductos);
                     break;
             }
         } else {
-            printf("Opción no válida. Por favor, seleccione una opción válida.\n");
+            printf("Opción no válida. Escoge una opción valida\n");
         }
-    } while (opcion != 5);
+    } while (escoger != 5);
 
     printf("¡ADMINISTRADOR RECUERDA SIEMPRE REGISTRAR EL STOCK BAY!\n");
 
