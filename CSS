@@ -1,0 +1,78 @@
+/* Estilos cuerpo de página */
+body {
+    background-color: #14125a; /* Fondo */
+    color: #eef0f2; /* texto */
+    font-family: 'Balsamiq Sans', cursive; /* fuente, google */
+}
+
+/* Encabezado */
+h1 {
+    font-size: xx-large; /* Tamaño */
+    text-decoration: none; /* no */
+    border-radius: 20px; /* redondeado */
+    border-color: #EDF2F4;
+    border-style: none;/* no */
+    background: #8D99AE;/* fondo */
+    border-width: 5px;/* ancho */
+}
+/* Elementos de entrada */
+input {
+    background-color: #EDF2F4;
+    border: 1px solid #EDF2F4; /* delgado */
+    outline: none; /* sin contorno */
+    display:block; /* forma de bloque  */
+    padding: 10px; /* relleno interno */
+    width:100%; /* ancho  */
+    border-radius:10px; /* redondeado borde| */
+    font-family: 'Balsamiq Sans', cursive /* fuente,google */
+}
+
+button {
+    text-align: center;
+    cursor: pointer;
+    padding: 5px; /* relleno interno */
+    border-radius: 10px; 
+    font-size: 15px; /* fuente */
+    color:white;
+    border-color: #BE1F44;
+    background-color: #D93A4D;
+    outline: none;
+    font-family: 'Balsamiq Sans', cursive
+}
+/* Cambio de color al pasar por encima */
+button:hover {
+    background-color: #ef3652;
+}
+
+button:active {
+    background-color: #BE1F44;
+    border-color: #a51c3c;
+}
+/* estilo en tablas y celdas */
+table, td, tr {
+    border: 4px solid #2B2D42; /* borde de tabla y celda */
+    border-radius: 6px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* estilo de los margenes HTML */
+.mr {
+    text-align: center;
+    margin:10px; /* margenes */
+}
+
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+/* estilo contenedores */
+.container {
+    align-content: center;
+    width:33%; /* ancho */
+    background-color: #97bc7e;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
